@@ -11,7 +11,7 @@ namespace Gambler
 		{
 			int amountLeft = 100;
 			Random random = new Random();
-			int win_loss = random.Next(0, 2);
+			int win_loss = random.Next(0,2);
 			if (win_loss == WIN)
 			{
 				amountLeft = STAKE + BET;
@@ -20,7 +20,7 @@ namespace Gambler
 			{
 				amountLeft = STAKE - BET;
 			}
-			Console.WriteLine("The amount I have lefft after betting is: " + amountLeft);
+			Console.WriteLine("The amount I have lefft after betting is: " +amountLeft);
 			Console.ReadLine();
 		}
 	}

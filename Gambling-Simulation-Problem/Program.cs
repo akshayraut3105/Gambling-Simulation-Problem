@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Gambler
 {
@@ -12,7 +12,7 @@ namespace Gambler
 			int amountLeft = 100;
 			//int numOfBets = 0;
 			Random random = new Random();
-			while (amountLeft != amountLeft / 2 || amountLeft == amountLeft + 50)
+			while (amountLeft != amountLeft / 2  || amountLeft == amountLeft + 50)
 			{
 				//numOfBets++;
 				int win_loss = random.Next(0, 2);
@@ -35,7 +35,7 @@ namespace Gambler
 		}
 		static void Main(string[] args)
 		{
-			callMethod();
+            callMethod();
 			Console.ReadLine();
 		}
 	}
